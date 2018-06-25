@@ -3,6 +3,9 @@ project(i_am_an_idiot C)
 
 set(CMAKE_C_STANDARD 11)
 
+include_directories(.)
+
 add_executable(i_am_an_idiot
         fahr_celsius.c
-        hello.c fahr_celsius.h)
+        fahr_celsius.h
+        hello.c)
