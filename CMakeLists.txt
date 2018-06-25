@@ -9,4 +9,6 @@ include_directories(.)
 add_executable(i_am_an_idiot
         fahr_celsius.c
         fahr_celsius.h
-        hello.c)
+        echo_eof.h
+        echo_eof.c
+        hello.c echo_eof.h)

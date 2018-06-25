@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #include "fahr_celsius.h"
+#include "echo_eof.h"
 
 int main() {
     printf("hello, world\n");
@@ -8,4 +9,6 @@ int main() {
 
     printf("\n\n----------\n\n");
     fahr_for_celsius();
+
+    echo_eof();
 }
