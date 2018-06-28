@@ -14,4 +14,7 @@ add_executable(i_am_an_idiot
         fahr_celsius.h
         echo_eof.h
         echo_eof.c
-        hello.c echo_eof.h)
+        count_char.c
+        count_char.h
+        hello.c)
+

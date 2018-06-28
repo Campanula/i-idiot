@@ -2,6 +2,7 @@
 
 #include "fahr_celsius.h"
 #include "echo_eof.h"
+#include "count_char.h"
 
 int main() {
     printf("hello, world\n");
@@ -11,4 +12,6 @@ int main() {
     fahr_for_celsius();
 
     echo_eof();
+    count_char();
 }
+
