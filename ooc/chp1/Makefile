@@ -1,11 +1,13 @@
-target := main
-objects := main.o Set.o
+target := testSet testBag
 
 all: $(target)
 
-main: $(objects)
-	$(CC) -o $@ $(objects)
+testSet: Set.o main.o
+	$(CC) -o $@ $^
+
+testBag: Bag.o main.o
+	$(CC) -o $@ $^
 
 clean:
-	-rm -f $(target) $(objects)
+	-rm -f $(target) Set.o Bag.o main.o
 
