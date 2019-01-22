@@ -1,9 +1,9 @@
-target := main
-objects := main.o Set.o
+target := testString
+objects := new.o String.o testString.o
 
 all: $(target)
 
-main: $(objects)
+testString: $(objects)
 	$(CC) -o $@ $(objects)
 
 clean:
