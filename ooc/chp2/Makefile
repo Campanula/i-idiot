@@ -1,11 +1,13 @@
-target := testString
-objects := new.o String.o testString.o
+target := testString testAtom
 
 all: $(target)
 
-testString: $(objects)
-	$(CC) -o $@ $(objects)
+testString: new.o String.o testString.o
+	$(CC) -o $@ $^
+
+testAtom: new.o Atom.o testString.o
+	$(CC) -o $@ $^
 
 clean:
-	-rm -f $(target) $(objects)
+	-rm -f $(target) new.o String.o testString.o Atom.o testAtom.o
 
