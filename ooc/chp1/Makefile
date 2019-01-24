@@ -9,5 +9,5 @@ testBag: Bag.o main.o
 	$(CC) -o $@ $^
 
 clean:
-	-rm -f $(target) Set.o Bag.o main.o
+	-rm -f $(target) *.o
 

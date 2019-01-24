@@ -9,5 +9,5 @@ testAtom: new.o Atom.o main.o
 	$(CC) -o $@ $^
 
 clean:
-	-rm -f $(target) new.o String.o Atom.o main.o
+	-rm -f $(target) *.o
 
