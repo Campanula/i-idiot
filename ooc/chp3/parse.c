@@ -85,7 +85,8 @@ static void * factor () {
                 error("expecting )");
             }
             break;
-        case TK_NUM:
+        case TK_NUM:  // 如果是数字，token 在 scan 方法中已经指向了下一个字符
+            // 从全局变量number读取
             result = new(Value, number);
             break;
         default:
